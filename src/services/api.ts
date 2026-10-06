@@ -7,8 +7,3 @@ export async function loadShipmentSnapshot(fallback: Shipment[]): Promise<Shipme
   if (!import.meta.env.VITE_API_BASE_URL) return fallback
   try { return (await client.get<Shipment[]>('/shipments')).data } catch { return fallback }
 }
-
-export async function requestRelease(shipmentId: string, payload: { temperatureVerified: boolean; evidenceVerified: boolean }) {
-  if (!import.meta.env.VITE_API_BASE_URL) return { accepted: true, requestId: `LOCAL-${shipmentId}` }
-  return (await client.post(`/shipments/${shipmentId}/release`, payload)).data
-}
