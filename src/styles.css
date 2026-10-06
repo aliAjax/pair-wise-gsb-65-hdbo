@@ -36,3 +36,23 @@ main { grid-column: 2; min-width: 0; position: relative; }
 .deviation-nav button > div { display: flex; gap: 8px; align-items: center; }.deviation-nav span, .deviation-nav small { color: #7d898c; font-size: 11px; }
 .deviation-main { background: white; border: 1px solid #d9e1e3; padding: 18px; }.two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 13px; }.raw-points { background: #f4f8f8; padding: 14px; }.raw-points p { color: #6d7b7e; }.raw-points code { color: #174d60; line-height: 1.8; }
 .reset { position: fixed; right: 20px; bottom: 15px; }.empty { padding: 80px; text-align: center; color: #718085; }
+.muted { color: #8b979b; }
+.pending-bar { position: sticky; top: 0; z-index: 20; display: grid; gap: 8px; padding: 10px 28px; background: #fff8e6; border-bottom: 1px solid #efd99a; }
+.pending-bar .pending-meta { color: #8a7a44; font-size: 11px; }
+.release-inline { background: white; border: 1px solid #dae2e4; padding: 16px; margin-bottom: 15px; }
+.release-panel .panel-title div h2 { font-size: 15px; margin: 0; }.release-panel .panel-title div span { display: block; color: #7c898c; font-size: 11px; margin-top: 3px; }
+.release-history { margin-top: 14px; }.release-history-title { font-size: 12px; color: #5f6e72; margin-bottom: 10px; border-top: 1px dashed #d8e0e2; padding-top: 12px; }
+.release-card { background: #fafcfc; border: 1px solid #e4eaeb; padding: 10px 12px; }
+.release-card p { margin: 8px 0; font-size: 12px; color: #415054; }
+.release-card-head small { margin-left: 4px; }
+.basis-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 8px; }
+.basis-label { font-size: 11px; color: #6d7b7e; margin-bottom: 6px; }
+.basis-row { display: flex; align-items: center; gap: 6px; font-size: 11px; color: #415054; margin-bottom: 4px; flex-wrap: wrap; }
+.invalidated-box { margin-top: 8px; padding: 8px 10px; background: #fdf3e3; border-left: 3px solid #d99a35; font-size: 12px; color: #7a5a24; }
+.invalidated-box small { display: block; color: #a5854b; margin-top: 3px; }
+.basis-version { font-size: 11px; color: #5f7d6a; background: #eef7f1; padding: 1px 7px; border-radius: 3px; }
+.change-note { color: #9a7b3f !important; }
+.deviation-history .history-field { margin: 6px 0 0; font-size: 12px; color: #415054; }
+.audit-releases .audit-release-card { background: white; border: 1px solid #e2e8e9; padding: 12px 14px; }
+.audit-release-card p { margin: 8px 0; font-size: 12px; color: #415054; }
+.ant-timeline { margin-top: 6px; }
